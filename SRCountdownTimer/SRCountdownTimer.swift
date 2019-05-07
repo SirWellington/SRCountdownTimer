@@ -160,7 +160,8 @@ public class SRCountdownTimer: UIView {
                 self.end()
             }
         }
-        RunLoop.main.add(timer!, forMode: .defaultRunLoopMode)
+        
+        RunLoop.main.add(timer!, forMode: .default)
 
         delegate?.timerDidStart?()
     }
